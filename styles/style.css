@@ -13,6 +13,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow:unset;
 }
 nav{
     display: flex;
@@ -71,9 +72,11 @@ input[type=text], select {
     width:55vw;
     background: #F6C28B;
     margin-bottom: 10vmin;
+    overflow-y: scroll;
 }
 .small {
     max-height: 400px;
+    overflow-y:hidden;
 }
 
 .aside{
