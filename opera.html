@@ -1,72 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elon Msuk</title><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Opera</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="js/js.js"></script>
 </head>
+
 <body>
     <nav>
+        <img src="assets/logo.png" alt="logo">
         <a href="index.html">SongR</a>
-
         <ul class="pagesL">
-            <li><a class="page selected" href="index.html">Acceuil</a></li>
+            <li><a class="page" href="index.html">Acceuil</a></li>
             <li><a class="page" href="Rock.html">Rock</a></li>
-            <li><a class="page" href="opera.html">opera</a></li>
-            <li><a class="page" href="classical.html">classical</a></li>
-            <li><a class="page" href="contact.html">contact</a></li>
+            <li><a class="page" href="Opera.html">Opera</a></li>
+            <li><a class="page" href="Classical.html">Classical</a></li>
+            <li><a class="page" href="Contact.html">Contact</a></li>
         </ul>
     </nav>
+
     <section class="content">
         <div class="aside">
-                <ul>
-                    <li><a href="#1">Don Carlos: "O' Don Fatal"</a></li>
-                    <li><a href="#2">Norma: "Casta Diva"</a></li>
-                    <li><a href="#3">Il trovatore: "Condotta ell'era in ceppi"</a></li>
-                    <li><a href="#4">Turandot: "Nessun dorma"</a></li>
-                    <li><a href="#5">Il trovatore: "Tacea la notte placida" </a></li>
-                    
-                </ul>
+            <ul>
+                <li><a href="#1">Don Carlos: "O' Don Fatal"</a></li>
+                <li><a href="#2">Norma: "Casta Diva"</a></li>
+                <li><a href="#3">Il trovatore: "Condotta ell'era in ceppi"</a></li>
+                <li><a href="#4">Turandot: "Nessun dorma"</a></li>
+                <li><a href="#5">Il trovatore: "Tacea la notte placida" </a></li>
+
+            </ul>
         </div>
         <div class="description">
-        <h1 style="text-align: center; margin-bottom: 3vmin;">Opera</h1>
-        <div id="1" class="song">
-            <h1>Don Carlos: "O' Don Fatal":</h1>
-            <img src="assets/don carlos_opera.jpg" alt=""><br>
-            Par: Don Carlos, année: 1859
-            <button>acheter</button>
-        </div>
+            <h1>Opera</h1>
+            <button id= "stock">stock</button>
+            <div id="1" class="song">
+                <h1>Don Carlos: "O' Don Fatal":</h1>
+                <div>
+                    <img src="assets/don carlos_Opera.jpg" alt="">
+                    <div class="displayStock"><h4>dd</h4></div>
+                </div>
+                Par: Don Carlos, année: 1859
+                <div class="ItemCtrl"><button>-</button><input value="0" type="text"><button>+</button></div>
+                <button>Ajouter au panier</button>
+            </div>
             <div id="2" class="song">
-            <h1>Norma: "Casta Diva":</h1>
-            <img src="assets/norma-opera.jpg" alt=""><br>
-            Par: Norma, année de creation: 1798
-            <button>acheter</button>
-        </div>
+                <h1>Norma: "Casta Diva":</h1>
+                <div>
+                    <img src="assets/norma-Opera.jpg" alt="">
+                    <div class="displayStock"><h4>dd</h4></div>
+                </div>
+                Par: Norma, année de creation: 1798
+                <div class="ItemCtrl"><button>-</button><input value="0" type="text"><button>+</button></div>
+                <button>Ajouter au panier</button>
+            </div>
             <div id="3" class="song">
-            <h1>Il trovatore: "Condotta ell'era in ceppi":</h1>
-            <img src="assets/trovatore-opera.jpg" alt=""><br>
-            Par:Il trovatore, année: 1789
-            <button>acheter</button>
-        </div>
+                <h1>Il trovatore: "Condotta ell'era in ceppi":</h1>
+                <div>
+                    <img src="assets/trovatore-Opera.jpg" alt="">
+                    <div class="displayStock"><h4>dd</h4></div>
+                </div>
+                Par:Il trovatore, année: 1789
+                <div class="ItemCtrl"><button>-</button><input value="0" type="text"><button>+</button></div>
+                <button>Ajouter au panier</button>
+            </div>
             <div id="4" class="song">
-            <h1>Turandot: "Nessun dorma":</h1>
-            <img src="assets/turandor-oprera.jpg" alt=""><br>
-            Par:Turandot, année: 1765
-            <button>acheter</button>
-        </div>
+                <h1>Turandot: "Nessun dorma":</h1>
+                <div>
+                    <img src="assets/turandor-oprera.jpg" alt="">
+                    <div class="displayStock"><h4>dd</h4></div>
+                </div>
+                Par:Turandot, année: 1765
+                <div class="ItemCtrl"><button>-</button><input value="0" type="text"><button>+</button></div>
+                <button>Ajouter au panier</button>
+            </div>
             <div id="5" class="song">
-            <h1>Il trovatore: "Tacea la notte placida" 
-                :</h1>
-            <img src="assets/tovat_opera.jpg" alt=""><br>
-               Par: Il trovatore, année: 1745 
-            <button>acheter</button>
-        </div>
+                <h1>Il trovatore: "Tacea la notte placida"
+                    :</h1>
+                <div>
+                    <img src="assets/tovat_Opera.jpg" alt="">
+                    <div class="displayStock"><h4>dd</h4></div>
+                </div>
+                Par: Il trovatore, année: 1745
+                <div class="ItemCtrl"><button>-</button><input value="0" type="text"><button>+</button></div>
+                <button>Ajouter au panier</button>
+            </div>
         </div>
     </section>
+
+
     <footer>
         <p>Copyright &copy; 2020 Wadjinny ilyas.</p>
     </footer>
 </body>
+
 </html>

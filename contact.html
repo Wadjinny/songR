@@ -1,60 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elon Msuk</title><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <nav>
-        <a href="index.html">SongR</a>
 
-        <ul class="pagesL">
-            <li><a class="page selected" href="index.html">Acceuil</a></li>
-            <li><a class="page" href="Rock.html">Rock</a></li>
-            <li><a class="page" href="opera.html">opera</a></li>
-            <li><a class="page" href="classical.html">classical</a></li>
-            <li><a class="page" href="contact.html">contact</a></li>
-        </ul>
-    </nav>
-    <section class="content">
-        <div class="description" style="overflow-x: hidden;">
-            <h1 style="text-align: center; margin-bottom: 3vmin;">Demande de Contact</h1>
-            <div class="contact">
-            <label for="fname">Nom</label>
-            <input type="text" id="nom" name="firstname" placeholder="Votre nom...">
-            <br>
-            <label for="fname">Prenom</label>
-            <input type="text" id="prenom" name="firstname" placeholder="Votre Prenom...">  
-            <br>
-            <label id="radio">Sexe</label>
-            <label class="container">Home
-              <input type="radio" checked="checked">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">Femme
-              <input type="radio">
-              <span class="checkmark"></span>
-            </label>
-            <br><br>
-            <label for="">Function</label>
-            <select name="cars" id="cars" form="carform">
-            <option value="Enseignant">Enseignant</option>
-            <option value="Etudiant">Etudiant</option>
-            <option value="Policier">Policier</option>
-            <option value="Boulanger">Boulanger</option>
-            </select>
-            <br><br>
-            Comment:<br>
-            <textarea rows="4" cols="50" name="comment"></textarea> 
-            <br><br>
-            <input type="submit" value="Envoyer" class="submit">
-        </div>
-    </section>
-    <footer>
-        <p>Copyright &copy; 2020 Wadjinny ilyas.</p>
-    </footer>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="js/js.js"></script>
+</head>
+
+<body>
+  <nav>
+    <img src="assets/logo.png" alt="logo">
+    <a href="index.html">SongR</a>
+    <ul class="pagesL">
+      <li><a class="page" href="index.html">Acceuil</a></li>
+      <li><a class="page" href="Rock.html">Rock</a></li>
+      <li><a class="page" href="Opera.html">Opera</a></li>
+      <li><a class="page" href="Classical.html">Classical</a></li>
+      <li><a class="page" href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <div class="description" style="overflow-x: hidden;">
+      <h1 >Demande de Contact</h1>
+      <div class="Contact">
+        <label for="fname">Nom</label>
+        <input type="text" id="nom" name="firstname" placeholder="Votre nom...">
+        
+        <label for="fname">Prenom</label>
+        <input type="text" id="prenom" name="firstname" placeholder="Votre Prenom...">
+        
+        <label id="radio">Sexe</label>
+        <label class="container">Home
+          <input type="radio" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Femme
+          <input type="radio">
+          <span class="checkmark"></span>
+        </label>
+        
+        <label for="">Function</label>
+        <select name="cars" id="cars" form="carform">
+          <option value="Enseignant">Enseignant</option>
+          <option value="Etudiant">Etudiant</option>
+          <option value="Policier">Policier</option>
+          <option value="Boulanger">Boulanger</option>
+        </select>
+        
+        Comment:
+        <textarea rows="4" cols="50" name="comment"></textarea>
+        
+        <input type="submit" value="Envoyer" class="submit">
+      </div>
+  </section>
+
+
+  <footer>
+    <p>Copyright &copy; 2020 Wadjinny ilyas.</p>
+  </footer>
 </body>
+
 </html>
