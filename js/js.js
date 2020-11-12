@@ -6,7 +6,7 @@ window.onload = () => {
     zoomImg()
 }
 function zoomImg(){
-    let imgs=Array.from(document.getElementsByTagName("img"))
+    let imgs=Array.from(document.getElementsByTagName("img")).filter((el)=>el.parentNode.parentNode.classList[0]=="song")
     let img=document.createElement("img")
     img.classList.add("imgHover")
     document.getElementsByTagName("body")[0].append(img)
