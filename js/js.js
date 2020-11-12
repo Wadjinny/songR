@@ -8,7 +8,6 @@ window.onload = () => {
 function zoomImg(){
     let imgs=Array.from(document.getElementsByTagName("img"))
     let img=document.createElement("img")
-    img.src="assets/godsmack.jpg"
     img.classList.add("imgHover")
     document.getElementsByTagName("body")[0].append(img)
     let mousover=(el)=>{
@@ -90,4 +89,14 @@ function aesthetics() {
     let ind = pgs.indexOf(title)
     let list = document.getElementsByTagName("ul")[0].children
     list[ind].children[0].classList.add("selected")
+}
+function elAinelB(a,b) {
+    const rect1 = a.getBoundingClientRect();
+    const rect2 = b.getBoundingClientRect();
+    return (
+        rect1.top >= 0 &&
+        rect1.left >= 0 &&
+        rect1.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect1.right <= (window.innerWidth || document.documentElement.clientWidth)
+    )
 }
