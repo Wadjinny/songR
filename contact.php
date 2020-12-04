@@ -13,17 +13,7 @@
 </head>
 
 <body>
-  <nav>
-    <img src="img/logo.png" alt="logo">
-    <a href="index.html">SongR</a>
-    <ul class="pagesL">
-      <li><a class="page" href="index.html">Acceuil</a></li>
-      <li><a class="page" href="Rock.html">Rock</a></li>
-      <li><a class="page" href="Opera.html">Opera</a></li>
-      <li><a class="page" href="Classical.html">Classical</a></li>
-      <li><a class="page" href="Contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <?php require("nav.php"); ?>
 
   <section class="content">
     <div class="description" style="overflow-x: hidden;">
@@ -61,9 +51,7 @@
   </section>
 
 
-  <footer>
-    <p>Copyright &copy; 2020 Wadjinny ilyas.</p>
-  </footer>
+  <?php require("footer.php") ?>
 </body>
 
 </html>

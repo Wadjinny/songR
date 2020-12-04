@@ -88,7 +88,7 @@ function aesthetics() {
     let title = document.getElementsByTagName("title")[0].innerText
     let ind = pgs.indexOf(title)
     let list = document.getElementsByTagName("ul")[0].children
-    list[ind].children[0].classList.add("selected")
+    list[ind].classList.add("selected")
 }
 function elAinelB(a,b) {
     const rect1 = a.getBoundingClientRect();
