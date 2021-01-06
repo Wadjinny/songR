@@ -7,17 +7,54 @@
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-
+    background: #FCD7AD;
 }
 
+.msgAlertGood{
+    color: #20ff00;
+    background: #456d22ce;
+    padding: 5px;
+    border: solid 1px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.hoverDiv{
+    position: fixed;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    animation: hideAfter 1s 4s;
+    animation-fill-mode: ;
+}
+@keyframes hideAfter{
+    0%{
 
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.msgAlertBad{
+    color: #ff5656;
+    background: #ff00001f;
+    padding: 5px;
+    border: solid 1px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
 
 .content {
     display: flex;
@@ -36,7 +73,7 @@ body {
     background: #FCD7AD;
 }
 
-input[type=text],
+input[type=text],input[type=password],
 select {
     width: 100%;
     padding: 12px 20px;
@@ -69,13 +106,15 @@ select {
 
 .song button {
     border: none;
-    color: white;
+    color: black;
     padding: 7px 15px;
     text-align: center;
-    font-size: 16px;
+    font-size: .7em;
     margin: 4px 2px;
     cursor: pointer;
-    background-color: #031a22;
+    border:solid #72471f 2px;
+    border-radius: 2px;
+    background-color: #6b4c2f59;
 }
 .song button:disabled{
     background-color: gray;
@@ -85,13 +124,15 @@ select {
 }
 
 .description {
-    width: 55vw;
-    background: #F6C28B;
+    width: 66vw;
     margin-bottom: 10vmin;
-    overflow-y: scroll;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
+    max-width: 900px;
+    height: 70vh;
+    /* display: flex; */
+}
+.onethird{
+    width: 33%;
+    display: inline-block;
 }
 .description.small{
     display: block;
@@ -125,14 +166,14 @@ select {
     background: #facfa1;
     width: 23vw;
     height: 60vh;
+    box-shadow: 0px 10px 20px -11px #A57548;
 }
 
 .content>* {
-    padding: 2vmin;
+    /*padding: 2vmin;*/
     margin-top: 5vh;
     color: #613f1f;
     border-radius: 10px;
-    box-shadow: 0px 10px 20px -11px #A57548;
 }
 
 
@@ -153,7 +194,7 @@ footer {
 
 .aside li {
     list-style: none;
-    padding: 1vmin 0;
+    padding: 1vmin;
 }
 
 .aside a {
@@ -163,12 +204,23 @@ footer {
 .aside a:hover {
     color: #d18844;
 }
-
-.description img {
-    width: 25vmin;
-    margin-left: 1vmin;
+.imgHolder{
+    height: 15vmin;
+    width: 15vmin;
+}
+.song h1{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.song img {
     border-radius: 10px;
-    z-index: 1;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+}
+.song img:hover{
+    transform: scale(2.5);
 }
 
 
@@ -178,12 +230,13 @@ footer {
     border-radius: 10px;
     box-shadow: 0px 10px 20px -11px #A57548;
     padding: 1vmin;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    width: 30%;
 }
 
 .song>div {
-    display: flex;
+    width: 50%;
+    display: inline-block;
 }
 
 .displayStock {
@@ -197,31 +250,14 @@ footer {
     width: 10vmin;
     text-align: center;
     padding-left: 10px;
+    transition: left .5s;
 }
-.imgHover{
-    position: absolute;
-    z-index: 2;
-    width: 40vmin;
-    display: none;
-}
+
 .logo {
     font-size: 2em;
 }
-.animatIn{
-    animation-name: stockIn;
-    animation-duration: .5s;
-}
-.animatOut{
-    animation-name: stockOut;
-    animation-duration: .5s;
-}
-@keyframes stockIn{
-    from{ left:-100px;}
-    to{ left:-10px;}
-}
-@keyframes stockOut{
-    from{ left:-10px;}
-    to{ left:-100px;}
+nav>span{
+    display: none;
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -245,7 +281,7 @@ footer {
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1000px) {
     .content {
 
         flex-direction: column;
@@ -256,5 +292,24 @@ footer {
     .aside,
     .description {
         width: 70vw;
+        height: inherit;
+    }
+    nav>span{
+        display: inherit;
+    }
+    .pagesL{
+        display: none;
+    }
+    body {
+       
+    }
+
+    .song {
+        width: 49%;
+    }
+    .input{
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
     }
 }
